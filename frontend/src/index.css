@@ -1,0 +1,19 @@
+:root {
+  --black: #171217;
+  --gray:#474747;
+  --light-gray: #777078;
+  --pink: #FF689D;
+  --light-pink: #F8C8DC;
+  --blush: #FCEAF1;
+  --radius: 10px;
+  --round-radius: 50px;
+  --shadow: 1px 4px 10px rgba(0, 0, 0, 0.15);
+
+
+}
+
+
+* {
+  margin: 0;
+  font-family: 'inter', sans-serif;
+}
