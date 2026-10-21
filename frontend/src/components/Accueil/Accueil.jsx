@@ -1,5 +1,5 @@
 import './Accueil.css'
-import homeimage from '../../assets/homeimage.svg'
+import homeimage from '../../assets/homeimage.webp'
 export default function Accueil() {
   return (
     <div className="accueil">
