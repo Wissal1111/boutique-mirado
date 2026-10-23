@@ -1,0 +1,147 @@
+.about {
+    background-color: var(--blush);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 70px 30px;
+    box-sizing: border-box;
+}
+
+.about ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.about li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    padding: 15px 25px;
+    position: relative;
+}
+
+.about li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.about li svg {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 6px;
+}
+
+.about li h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.about li span {
+    font-size: 13px;
+    color: #555;
+}
+
+@media (min-width: 1600px) {
+    .about {
+        padding: 90px 40px;
+    }
+
+    .about ul {
+        max-width: 1500px;
+    }
+
+    .about li svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    .about li h3 {
+        font-size: 21px;
+    }
+
+    .about li span {
+        font-size: 15px;
+    }
+
+    .about li:not(:last-child)::after {
+        height: 105px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about li {
+        padding: 15px 12px;
+    }
+
+    .about li svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    .about li h3 {
+        font-size: 15px;
+    }
+
+    .about li span {
+        font-size: 11px;
+    }
+
+    .about li:not(:last-child)::after {
+        height: 70px;
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        padding: 30px 20px;
+    }
+
+    .about ul {
+        flex-direction: column;
+        max-width: 260px;
+    }
+
+    .about li {
+        padding: 25px 0;
+    }
+
+    .about li svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .about li h3 {
+        font-size: 13px;
+    }
+
+    .about li span {
+        font-size: 9px;
+    }
+    .about li:not(:last-child)::after {
+        right: auto;
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 1px;
+    }
+}
