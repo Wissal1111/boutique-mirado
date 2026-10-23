@@ -1,12 +1,20 @@
 export default function Cart2() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 5H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
-<path d="M19 2V8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
-<path d="M2.04999 2.05005L3.14899 2.02205C3.38642 2.01606 3.61823 2.09478 3.80292 2.24411C3.98761 2.39344 4.11312 2.60362 4.15699 2.83705L6.84699 17.184C6.88992 17.4134 7.01168 17.6205 7.19119 17.7695C7.37071 17.9185 7.59668 18.0001 7.82999 18H18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
-<path d="M4.564 5H12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
-<path d="M6.25 13.9999H18.962C19.4242 14.0086 19.8751 13.857 20.2381 13.5707C20.6011 13.2845 20.8537 12.8814 20.953 12.4299L21.125 11.3889" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
-<path d="M20 20C20 21.1046 19.1046 22 18 22C16.8954 22 16 21.1046 16 20C16 18.8954 16.8954 18 18 18C19.1046 18 20 18.8954 20 20Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
-<path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_11_194)">
+<path d="M14.6667 4.58325H20.1667" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+<path d="M17.4167 1.83325V7.33325" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+<path d="M1.87918 1.87923L2.8866 1.85356C3.10424 1.84808 3.31674 1.92023 3.48604 2.05712C3.65534 2.194 3.77039 2.38668 3.8106 2.60065L6.27643 15.7521C6.31578 15.9623 6.4274 16.1521 6.59195 16.2887C6.75651 16.4253 6.96365 16.5001 7.17751 16.5001H16.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+<path d="M4.18365 4.58325H11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+<path d="M5.72916 12.8334H17.3818C17.8055 12.8413 18.2188 12.7023 18.5516 12.44C18.8843 12.1776 19.1159 11.808 19.2069 11.3942L19.3646 10.4399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+<path d="M18.3333 18.3333C18.3333 19.3459 17.5125 20.1667 16.5 20.1667C15.4875 20.1667 14.6667 19.3459 14.6667 18.3333C14.6667 17.3208 15.4875 16.5 16.5 16.5C17.5125 16.5 18.3333 17.3208 18.3333 18.3333Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+<path d="M9.16667 18.3333C9.16667 19.3459 8.34586 20.1667 7.33333 20.1667C6.32081 20.1667 5.5 19.3459 5.5 18.3333C5.5 17.3208 6.32081 16.5 7.33333 16.5C8.34586 16.5 9.16667 17.3208 9.16667 18.3333Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+</g>
+<defs>
+<clipPath id="clip0_11_194">
+<rect width="22" height="22" fill="white"/>
+</clipPath>
+</defs>
 </svg>
+
   )}

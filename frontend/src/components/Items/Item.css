@@ -1,0 +1,121 @@
+.item{
+    box-shadow: var(--shadow);
+    background-color: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.item img{
+    width:210px;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+.item .heart{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+}
+.item h3{
+    font-size: 18px;
+}
+.item .nouveau{
+    color: var(--pink);
+}
+.item span{
+    font-size: 14px;
+    color: var(--gray);
+    font-weight: 500;
+}
+.item .item-btns{
+    display: flex;
+    gap: 6%;
+    margin-top: 10px;
+}
+.item .item-btns button{
+    border-radius: var(--radius);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.item .item-btns .commander{
+    background-color: var(--pink);
+    padding: 10px 20px;
+    width: 100%;
+}
+.item .item-btns .commander:hover,.item .item-btns .commander:focus{
+    background-color: var(--pink-hover);
+}
+.item .item-btns .ajouter{
+    background-color: var(--blush);
+    padding: 0px 10px;
+}
+.item .item-btns .ajouter:hover,.item .item-btns .ajouter:focus{
+    background-color: var(--blush-hover);
+}
+@media (min-width: 629px) and (max-width: 1100px) {
+    .item:nth-child(n + 4) {
+        display: none;
+    }
+}
+@media (max-width: 850px) {
+    .item img{
+        width: 160px;
+    }
+    .item h3{
+    font-size: 16px;
+}
+.item .item-btns button{
+    font-size: 12px;
+}
+.item-btns svg{
+width: 20px;
+height: 20px;
+}
+
+}
+@media (max-width: 628px) {
+    .item img{
+        width: 190px;
+    }
+}
+@media (max-width: 522px) {
+    .item img{
+        width: 160px;
+    }
+       .item h3{
+    font-size: 14px;
+}
+.item .item-btns button{
+    font-size: 12px;
+}
+.item span{
+    font-size: 12px;
+}
+}
+@media (max-width: 412px) {
+    .item img{
+        width: 140px;
+    }
+    .item .item-btns .commander{
+       padding: 8px 11px;
+    }
+    .item .item-btns .ajouter{
+        padding: 0px 8px;
+    }
+
+
+}
+@media (max-width:373px) {
+   .item img{
+        width: 180px;
+    }
+    .item .item-btns{
+    flex-direction: row;
+}
+}
