@@ -111,11 +111,25 @@ height: 20px;
 
 
 }
-@media (max-width:373px) {
+@media (max-width:374px) {
+   .item img{
+        width: 120px;
+    }
+    .item .item-btns .commander{
+       padding: 10px 8px;
+    }
+    .item .item-btns .ajouter{
+        padding: 0px 8px;
+    }
+    .ajouter svg{
+        height: 16px;
+        width: 16px;
+    }
+
+}
+@media (max-width:332px) {
    .item img{
         width: 180px;
     }
-    .item .item-btns{
-    flex-direction: row;
-}
+
 }
