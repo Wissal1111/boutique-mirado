@@ -1,15 +1,17 @@
 import Cart2 from '../../icons/Cart2';
 import Heart from '../../icons/Heart';
 import './Item.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Item({ item }) {
+  const navigate=useNavigate();
   const hasDiscount = item.discount > 0;
   const finalPrice = hasDiscount
     ? Math.round(item.price * (1 - item.discount / 100))
     : item.price;
 
   return (
-    <div className="item">
+    <div className="item" onClick={()=>navigate('/boutique/details')}>
       <Heart />
       <div className="image">
         <img src={item.image} alt={item.name} />
