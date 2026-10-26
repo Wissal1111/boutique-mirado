@@ -12,6 +12,7 @@
   --radius: 10px;
   --round-radius: 50px;
   --shadow: 1px 4px 6px rgba(0, 0, 0, 0.10);
+  --item-w: 232px; 
 
 
 }
@@ -25,7 +26,10 @@
 html {
   scroll-behavior: smooth;
 }
+body{
+    background-color: #FFF7FA;
 
+}
 section, .accueil, [id] {
   scroll-margin-top: 140px; 
 }

@@ -1,0 +1,132 @@
+.filter{
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: var(--shadow);
+    max-width: 260px;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.filter .filter-cat,
+.filter .filter-taille,
+.filter .filter-prix,
+.filter .filter-couleurs{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.filter-couleurs{
+    margin-bottom: 10px;
+}
+
+/* ---------- Tailles ---------- */
+.filter .taille-opts{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* ---------- Prix ---------- */
+.filter .price-range{
+    display: flex;
+    gap: 30px;
+}
+.filter .price-range .price-input{
+    position: relative;
+}
+.filter .price-input input{
+    width: 64px;
+    outline: none;
+    border: 2px solid rgb(236,196,213,0.58);
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: rgb(236,196,213,0.58);
+}
+.filter .price-input input:hover,
+.filter .price-input input:focus{
+    border: 2px solid rgb(214,171,189);
+}
+.price-range .a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter .price-range .price-input .da{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: var(--gray);
+    font-size: 14px;
+}
+
+/* ---------- Options (catégories + tailles) ---------- */
+.filter .option{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.filter .square{
+    position: relative;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: rgb(214,171,189,0.58);
+    transition: background-color .15s;
+}
+.filter .option:hover .square{
+    background-color: rgb(214,171,189,0.85);
+}
+.filter .square.checked{
+    background-color: rgb(214,171,189);
+}
+/* checkmark */
+.filter .square.checked::after{
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* ---------- Couleurs ---------- */
+.filter .couleurs-opts{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.filter .color-square{
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.08);
+    transition: outline-color .15s;
+}
+.filter .color-square.selected{
+    outline: 2px solid rgb(214,171,189);
+    outline-offset: 2px;
+}
+
+/* ---------- Remove number input arrows ---------- */
+/* Chrome, Edge, Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
