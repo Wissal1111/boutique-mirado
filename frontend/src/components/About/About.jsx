@@ -5,7 +5,7 @@ import Truck from '../../icons/Truck'
 import './About.css'
 export default function About(){
     return(
-        <div className="about">
+        <div className="about" id='about'>
             <ul>
                 <li>
                     <Truck/>

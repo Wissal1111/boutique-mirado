@@ -6,7 +6,7 @@ import './Footer.css'
 
 export default function Footer() {
     return (
-        <footer className="footer">
+        <footer className="footer" id='contact'>
             <img src={logo} alt="Mirado" className="footer-logo" />
 
             <ul className="footer-contacts">

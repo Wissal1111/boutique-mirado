@@ -13,8 +13,8 @@ export default function Item({ item }) {
       <Heart />
       <img src={item.image} alt={item.name} />
 
-      {item.isNew && !hasDiscount && <h3 className="nouveau">Nouveau</h3>}
-      {hasDiscount && !item.isNew && <h3 className="nouveau">-{item.discount}%</h3>}
+      {item.isNew && <h3 className="nouveau">Nouveau</h3>}
+      {hasDiscount && <h3 className="nouveau">-{item.discount}%</h3>}
 
       <span>{item.name}</span>
 
