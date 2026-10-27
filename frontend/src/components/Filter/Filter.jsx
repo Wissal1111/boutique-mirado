@@ -85,6 +85,11 @@ function CouleursFiltre({ selected, onToggle }) {
         </div>
     )
 }
+function Line(){
+    return(
+        <div className="line"></div>
+    )
+}
 
 export default function Filter({ onChange }) {
     const [categories, setCategories] = useState([])
@@ -105,8 +110,13 @@ export default function Filter({ onChange }) {
     return (
         <div className="filter">
             <CategoriesFiltre selected={categories} onToggle={toggle(setCategories)} />
+            <Line/>
             <TailleFiltre selected={tailles} onToggle={toggle(setTailles)} />
+            <Line/>
+
             <PrixFiltre min={prixMin} max={prixMax} onMin={setPrixMin} onMax={setPrixMax} />
+            <Line/>
+
             <CouleursFiltre selected={couleurs} onToggle={toggle(setCouleurs)} />
         </div>
     )

@@ -28,6 +28,9 @@
 .nos-produits{
     display: none;
 }
+.filtering{
+    display: none;
+}
 /* Tablet / small laptop: hide the filter, products take full width */
 @media (max-width: 1360px) {
     .boutique {
@@ -39,6 +42,31 @@
     .left-boutique{
         display: none;
     }
+    .filtering{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.filtering button{
+    background-color: transparent;
+    border: 2px solid var(--pink);
+    border-radius: 8px;
+    padding: 4px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    color: var(--pink);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3 ease-in-out;
+}
+.filtering button:hover{
+    background-color: var(--blush);
+}
    .boutique{
     padding-top:0 ;
    }

@@ -1,5 +1,4 @@
 import Cart2 from '../../icons/Cart2';
-import Heart from '../../icons/Heart';
 import './Item.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -12,7 +11,6 @@ export default function Item({ item }) {
 
   return (
     <div className="item" onClick={()=>navigate('/boutique/details')}>
-      <Heart />
       <div className="image">
         <img src={item.image} alt={item.name} />
       </div>

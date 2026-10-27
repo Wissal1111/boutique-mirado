@@ -1,0 +1,116 @@
+
+.filter-popup-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.filter-popup {
+    width: 100%;
+    max-width: 380px;
+    max-height: 85vh;
+    background-color: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.filter-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    border-bottom: 1px solid var(--white-hover);
+}
+
+.filter-popup-header h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.filter-popup-close {
+    background-color: transparent;
+    border: none;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.filter-popup-close:hover {
+    background-color: var(--white-hover);
+}
+
+.filter-popup-content {
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* Reuse the existing filter design */
+.filter-popup-content .filter {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+}
+
+.filter-popup-footer {
+    padding: 16px 20px;
+    border-top: 1px solid var(--white-hover);
+    background-color: white;
+}
+
+.filter-popup-apply {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: rgb(214, 171, 189);
+    border: 1px solid rgb(214, 171, 189);
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.filter-popup-apply:hover {
+    background-color: rgb(236, 196, 213);
+}
+
+/* Small screens: bottom-sheet style */
+@media (max-width: 480px) {
+    .filter-popup-overlay {
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    .filter-popup {
+        max-width: none;
+        max-height: 90vh;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .filter-popup-header {
+        padding: 16px 20px;
+    }
+
+    .filter-popup-content {
+        padding: 20px;
+    }
+
+    .filter-popup-footer {
+        padding: 14px 20px;
+    }
+}

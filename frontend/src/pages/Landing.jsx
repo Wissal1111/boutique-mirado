@@ -10,7 +10,7 @@ export default function Landing() {
   return (
     <div className="landing">
          <Header/>
-         <Navbar/>
+         <Navbar page="landing"/>
          <Accueil/>
          <Collection/>
          <Items/>

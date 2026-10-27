@@ -130,3 +130,8 @@ input[type="number"] {
     appearance: textfield;
     -moz-appearance: textfield;
 }
+.line{
+    width: 100%;
+    background-color: var(--white-hover);
+    height: 1px;
+}

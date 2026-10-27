@@ -1,5 +1,4 @@
 import './ItemDetails.css'
-import Heart from '../../icons/Heart'
 import Cart2 from '../../icons/Cart2';
 import { useState, useEffect } from 'react';
 import { WILAYAS } from './wilayas';
@@ -154,8 +153,6 @@ export default function ItemDetails({ item }) {
 
     return (
         <div className="item-details">
-            <Heart />
-
             <div className="images">
                 <div className="big-img">
                     <img src={item.image} alt={item.name} />
