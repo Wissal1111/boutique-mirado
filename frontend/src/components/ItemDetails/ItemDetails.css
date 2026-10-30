@@ -131,6 +131,7 @@ flex-wrap: wrap;
     background-color: rgb(214,171,189,0.58);
     border: none;
     cursor: pointer;
+    color: black;
 }
 .item-details .color-option{
     border-radius: 6px;
@@ -544,6 +545,7 @@ flex-wrap: wrap;
 .item-details .delivery-type {
     display: flex;
     gap: 10px;
+    color: black;
     max-width: 420px;
 }
 

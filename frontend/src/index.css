@@ -21,6 +21,8 @@
 * {
   margin: 0;
   font-family: 'inter', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  
 }
 
 html {

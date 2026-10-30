@@ -37,6 +37,7 @@ align-items: center;
     padding: 10px 20px;
     border-radius: var(--round-radius);
     width: 240px;
+    font-size: 14px;
 }
 .login-card  .login-btn{
 background-color: var(--pink);
