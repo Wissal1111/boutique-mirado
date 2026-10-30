@@ -6,6 +6,7 @@ import Boutique from './pages/Boutique';
 import Details from './pages/Details';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Login from './pages/Login';
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/boutique" element={<Boutique />} />
         <Route path="/boutique/details" element={<Details />} />
+        <Route path="/boutique/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   )
